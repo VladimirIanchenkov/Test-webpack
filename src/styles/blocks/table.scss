@@ -1,0 +1,65 @@
+.table {
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.table a {
+  color: $color-pelorous;
+  text-decoration: none;
+}
+
+.table td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table__heading {
+  position: relative;
+}
+
+.table__heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-grey-dark;
+}
+
+.table__heading input {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: $color-grey-dark;
+  border: none;
+  background: none;
+}
+
+.table__name,
+.table__e-mail {
+  max-width: 125px;
+}
+
+.table__company {
+  width: 200px;
+}
+
+.table__tel {
+  width: 206px;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+}
+
+.table__address {
+  max-width: 200px;
+}
